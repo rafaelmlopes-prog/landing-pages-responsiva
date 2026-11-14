@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Bem-Estar | Odontologia e Estética Facial</title>
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #25d366;
+      --bg-light: #f8fafc;
+      --text-dark: #1e293b;
+      --text-muted: #64748b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      color: var(--text-dark);
+      line-height: 1.6;
+      background-color: #ffffff;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+      padding: 18px 0;
+      border-bottom: 1px solid #e2e8f0;
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(6px);
+      z-index: 100;
+    }
+
+    .nav-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .btn-small {
+      background: var(--primary);
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 64px 0;
+      background: var(--bg-light);
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #ccfbf1;
+      color: var(--primary-dark);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      color: var(--text-dark);
+    }
+
+    .hero p {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 28px;
+    }
+
+    .btn-cta {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 16px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.05rem;
+      font-weight: 700;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+      transition: transform 0.2s;
+    }
+
+    .btn-cta:hover {
+      transform: translateY(-2px);
+    }
+
+    /* Serviços */
+    .section {
+      padding: 56px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 1.75rem;
+      margin-bottom: 36px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 24px;
+      background: #fff;
+    }
+
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 8px;
+      font-size: 1.15rem;
+    }
+
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* Localização e Horários */
+    .info-box {
+      background: var(--bg-light);
+      border-radius: 12px;
+      padding: 32px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+    }
+
+    .info-box h4 {
+      margin-bottom: 8px;
+      color: var(--primary-dark);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 24px 0;
+      border-top: 1px solid #e2e8f0;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    /* Botão Flutuante WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--accent);
+      color: #fff;
+      padding: 14px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+    }
+
+    @media (min-width: 768px) {
+      .hero h1 { font-size: 2.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container nav-flex">
+      <div class="logo">Clínica Bem-Estar</div>
+      <a href="#contato" class="btn-small">Agendar Consulta</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <span class="badge">Atendimento Humanizado na Vila Sônia</span>
+      <h1>Recupere a saúde e a estética do seu sorriso com segurança</h1>
+      <p>Avaliação personalizada, equipamentos modernos e horários flexíveis para cuidar de você e da sua família sem burocracia.</p>
+      <a href="#" class="btn-cta js-wpp-link" data-msg="Olá! Gostaria de agendar uma avaliação.">Agendar pelo WhatsApp</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Nossos Tratamentos</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Clínica Geral e Prevenção</h3>
+          <p>Check-up completo, limpeza profissional e diagnóstico preventivo para manter sua saúde em dia.</p>
+        </div>
+        <div class="card">
+          <h3>Estética e Clareamento</h3>
+          <p>Procedimentos modernos para harmonizar e devolver o brilho natural com resultados duradouros.</p>
+        </div>
+        <div class="card">
+          <h3>Implantes e Reabilitação</h3>
+          <p>Tecnologia avançada para devolver conforto, mastigação e confiança ao seu dia a dia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contato">
+    <div class="container">
+      <div class="info-box">
+        <div>
+          <h4>Endereço e Acesso</h4>
+          <p>Av. Prof. Francisco Morato, 3500 - Vila Sônia, São Paulo - SP</p>
+          <p>A 3 minutos da Estação Vila Sônia (Linha 4-Amarela).</p>
+        </div>
+        <div>
+          <h4>Horário de Atendimento</h4>
+          <p>Segunda a Sexta: 08h às 19h</p>
+          <p>Sábados: 08h às 13h</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Clínica Bem-Estar. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="#" class="whatsapp-float js-wpp-link" data-msg="Olá! Vim pelo site e gostaria de mais informações.">WhatsApp</a>
+
+  <script>
+    // Centraliza o número de WhatsApp em um único lugar para facilitar a troca por cliente
+    const TELEFONE_CLIENTE = "5511999999999";
+
+    document.querySelectorAll(".js-wpp-link").forEach(btn => {
+      const mensagem = encodeURIComponent(btn.getAttribute("data-msg"));
+      btn.href = `https://wa.me/${TELEFONE_CLIENTE}?text=${mensagem}`;
+      btn.target = "_blank";
+      btn.rel = "noopener noreferrer";
+    });
+  </script>
+
+</body>
+</html>
